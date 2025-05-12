@@ -6,7 +6,7 @@ import PackageDescription
 // Base dependencies needed on all platforms
 var dependencies: [Package.Dependency] = [
     .package(url: "https://github.com/apple/swift-system.git", from: "1.0.0"),
-    .package(url: "https://github.com/apple/swift-log.git", from: "1.5.0"),
+    .package(url: "https://github.com/apple/swift-log.git", from: "1.5.0")
 ]
 
 // Target dependencies needed on all platforms
@@ -47,6 +47,6 @@ let package = Package(
             dependencies: targetDependencies),
         .testTarget(
             name: "MCPTests",
-            dependencies: ["MCP"] + targetDependencies),
+            dependencies: ["MCP"] + targetDependencies)
     ]
 )
